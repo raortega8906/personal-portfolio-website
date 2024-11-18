@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
+import Section from '../components/Section.astro';
+import TitleSection from '../components/TitleSection.astro';
 import Card from '../components/Card.astro';
 ---
 
@@ -24,28 +26,28 @@ import Card from '../components/Card.astro';
 		</section>	
 
 		<!-- Sections About -->
-		<section class="w-full lg:w-[740px] mx-auto py-22" id="about">
-			<h2 class="text-4xl font-bold text-center">About Me</h2>
-		</section>	
+		<Section id="about">
+			<TitleSection>About Me</TitleSection>
+		</Section>	
 
 		<!-- Sections Experience -->
-		<section class="w-full lg:w-[740px] mx-auto py-22" id="experience">
-			<h2 class="text-4xl font-bold text-center">Work Experience</h2>
-		</section>	
+		<Section id="experience">
+			<TitleSection>Work Experience</TitleSection>
+		</Section>
 
 		<!-- Sections Skills -->
-		<section class="w-full lg:w-[740px] mx-auto py-22" id="skills">
-			<h2 class="text-4xl font-bold text-center">Technical Skills</h2>
-		</section>
+		<Section id="skills">
+			<TitleSection>Technical Skills</TitleSection>
+		</Section>
 
 		<!-- Sections Projects -->
-		<section class="w-full lg:w-[740px] mx-auto py-22" id="projects">
-			<h2 class="text-4xl font-bold text-center">Featured Projects</h2>
-		</section>	
+		<Section id="projects">
+			<TitleSection>Featured Projects</TitleSection>
+		</Section>
 
 		<!-- Sections Contact -->
-		<section class="w-full lg:w-[740px] mx-auto py-22" id="contact">
-			<h2 class="text-4xl font-bold text-center">Let's Connect</h2>
-		</section>	
+		<Section id="contact">
+			<TitleSection>Let's Connect</TitleSection>
+		</Section>
 	</main>
 </Layout>
