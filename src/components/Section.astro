@@ -1,3 +1,11 @@
-<section class="w-full lg:w-[1000px] mx-auto py-[5%]">
+---
+interface Props {
+	id: string;
+}
+
+const id = Astro.props.id;
+---
+
+<section class="w-full lg:w-[1000px] mx-auto py-[5%]" id={id}>
     <slot />
 </section>
