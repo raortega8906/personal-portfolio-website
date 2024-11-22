@@ -3,7 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
 import Section from '../components/Section.astro';
 import TitleSection from '../components/TitleSection.astro';
-import Card from '../components/Card.astro';
+import CardProject from '../components/CardProject.astro';
+import CardExperience from '../components/CardExperience.astro';
 ---
 
 <Layout title="My Portfolio Dev">
@@ -33,16 +34,15 @@ import Card from '../components/Card.astro';
 			<!-- crear un div con dos columnas, la izquierda con la foto y la derecha con el texto -->
 			<div class="flex flex-col justify-center items-center lg:flex-row gap-y-8 lg:gap-x-8">
 				<img src="/assets/images/rafa-v2.webp" alt="Rafael A. Ortega about me" class="w-[25%] h-[25%] rounded-full lg:my-0" />
-				<p class="text-sm lg:text-base">	
-					Con años de experiencia en desarrollo web, he dominado las habilidades para comprender los requisitos 
-					del cliente de acuerdo con las últimas tendencias. He trabajado con empresas de diferentes nichos, 
-					así que puedes confiar en mí para el tuyo.
+				<p class="text-xl opacity-80">	
+					I am a Computer Engineer with a deep passion for web development and a strong background in creating robust, 
+					scalable solutions. Currently, I specialize in PHP development, focusing on building dynamic 
+					applications using frameworks like Laravel and WordPress.
 					<br><br>
-					Pasé la mayor parte de estos años trabajando en diferentes áreas, como desarrollo front-end, 
-					desarrollo back-end, desarrollo de sitios con WordPress y soporte de sitios web. Habiendo 
-					trabajado en varios proyectos que ya están activos, puedo ayudarte con las mejores sugerencias 
-					e ideas posibles con las que podemos proceder. Te ofrezco una variedad de opciones en las que 
-					podemos trabajar juntos para crear tu proyecto ideal.
+					I firmly believe that the success of a company is tied to the people who make it up, 
+					which is why I strive to engage with the entire team, learning from each member and 
+					doing my best to contribute to the tasks assigned to me. My main goal for the future 
+					is to lead a team, where I can share the experience I have gained.
 				</p>
 			</div>
 			
@@ -51,6 +51,33 @@ import Card from '../components/Card.astro';
 		<!-- Sections Experience -->
 		<Section id="experience">
 			<TitleSection>Work Experience</TitleSection>
+			<CardExperience 
+				title="Web Developer" 
+				subtitle="2021 - Present" 
+				list={[
+					"Developed and maintained a WordPress website for a local restaurant",
+					"Designed and developed a responsive website for a local event",
+					"Collaborated with a team to create a responsive website for a local business",
+				]}
+			/>
+			<CardExperience 
+				title="Web Developer" 
+				subtitle="2020 - 2021" 
+				list={[
+					"Developed and maintained a WordPress website for a local restaurant",
+					"Designed and developed a responsive website for a local event",
+					"Collaborated with a team to create a responsive website for a local business",
+				]}	
+			/>
+			<CardExperience 
+				title="Web Developer" 
+				subtitle="2019 - 2020" 
+				list={[
+					"Developed and maintained a WordPress website for a local restaurant",
+					"Designed and developed a responsive website for a local event",
+					"Collaborated with a team to create a responsive website for a local business",
+				]}		
+			/>	
 		</Section>
 
 		<!-- Sections Skills -->
@@ -61,6 +88,24 @@ import Card from '../components/Card.astro';
 		<!-- Sections Projects -->
 		<Section id="projects">
 			<TitleSection>Featured Projects</TitleSection>
+
+			<div class="flex flex-col justify-center items-center lg:flex-row gap-y-8 lg:gap-x-8">
+				<!-- <CardProject 
+					title="Puntualitos" 
+					body="Puntualitos is a Laravel web application designed for efficient employee attendance and time management. It offers a user-friendly interface for employees to check in and out" 
+					href="https://github.com/raortega8906/puntualitos"
+				/>
+				<CardProject 
+					title="Mini-CRM" 
+					body="About This project is designed to manage companies and their employees through an admin panel. It is based on a blog post from the Laravel Daily blog by Povilas Korop." 
+					href="https://github.com/raortega8906/mini-crm"
+				/>
+				<CardProject 
+					title="Astro Portfolio"  
+					body="This is the codebase for Chabely Escalona's portfolio, showcasing her work as a web and graphic designer based in Madrid, Spain." 
+					href="https://github.com/raortega8906/Mini-CRM"
+				/> -->
+			</div>
 		</Section>
 
 		<!-- Sections Contact -->
