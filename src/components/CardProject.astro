@@ -1,4 +1,4 @@
-<!-- ---
+---
 interface Props {
 	title: string;
 	body: string;
@@ -8,7 +8,7 @@ interface Props {
 const { href, title, body } = Astro.props;
 ---
 
-<div class="max-w-sm p-6 bg-white bg-opacity-20 backdrop-blur-md border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:bg-opacity-20 dark:border-gray-700 w-[33%] ">
+<div class="max-w-sm p-6 bg-white bg-opacity-10 backdrop-blur-md border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:bg-opacity-10 dark:border-gray-700 w-[33%] ">
     <h5 class="mb-2 text-2xl font-bold">{title}</h5>
     <p class="mb-3 font-normal">{body}</p>
     <a
@@ -22,4 +22,4 @@ const { href, title, body } = Astro.props;
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
         </svg>
     </a>
-</div> -->
+</div>
