@@ -7,6 +7,6 @@ interface Props {
 const {href, download} = Astro.props; 
 ---
 
-<a href={href} class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-3.5 py-2.5 rounded dark:bg-gray-700 dark:text-gray-300" {...(download ? { download } : {})}>
+<a href={href} class="bg-gray-100 hover:bg-[#6effb7] text-gray-800 text-xs font-medium me-2 px-3.5 py-2.5 rounded dark:bg-gray-700 dark:text-gray-300" {...(download ? { download } : {})}>
     <slot />
 <a />
