@@ -1,17 +1,29 @@
 ---
 import BadgeContactMe from './BadgeContactMe.astro';
+import MailHeaderIcon from './icons/MailHeaderIcon.astro';
+import LinkedinHeaderIcon from './icons/LinkedinHeaderIcon.astro';
+import GitHubHeaderIcon from './icons/GitHubHeaderIcon.astro';
 ---
 
-<header class="flex flex-wrap justify-between items-center sm:pt-[10px] py-2 lg:py-5 sm:px-40 md:px-30 px-0 w-full xl:w-[100%] mx-auto sticky top-0 z-50 backdrop-blur-md">
+<header class="flex flex-col-reverse justify-between items-center sm:pt-[10px] py-2 lg:py-5 sm:px-40 md:px-30 px-0 w-full xl:w-[100%] mx-auto sticky top-0 z-50 backdrop-blur-md sm:mx-auto sm:text-center sm:items-center sm:flex-row">
     <!-- <h1 class="text-3xl font-bold text-center sm:text-left md:text-left justify-center">Rafael A. Ortega</h1> -->
     <img src="/assets/images/rafa-v3.webp" alt="Rafael A. Ortega" class="sm:w-14 sm:h-14 w-12 h-12 rounded-full lg:my-0" />
 
-    <nav class="flex flex-row flex-wrap gap-x-6 lg:gap-x-10 opacity-80 text-[9px] sm:text-xs lg:text-base">
+    <nav class="flex flex-row flex-wrap gap-x-6 lg:gap-x-10 opacity-80 text-[9px] sm:text-xs lg:text-base sm:ml-[7rem] ml-[0rem]  sm:py-0 py-4">
         <a href="#home" class="hover:text-[#6effb7]">Home</a>
         <a href="#experience" class="hover:text-[#6effb7]">Experience</a>
         <a href="#projects" class="hover:text-[#6effb7]">Projects</a>
         <a href="#about" class="hover:text-[#6effb7]">About</a>
     </nav>
 
-    <BadgeContactMe>Contact Me</BadgeContactMe>
+    <div class="flex flex-row items-center gap-x-2">
+        <a href="https://github.com/raortega8906/" target="_blank">
+            <GitHubHeaderIcon/>
+        </a>
+
+        <a href="https://www.linkedin.com/in/rafael-a-ortega/" target="_blank" class="mx-2">
+            <LinkedinHeaderIcon/>
+        </a>
+        <BadgeContactMe>Contact Me <MailHeaderIcon/></BadgeContactMe>
+    </div>
 </header>
