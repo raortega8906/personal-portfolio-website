@@ -47,6 +47,35 @@ const { title } = Astro.props;
 		overflow-x: hidden;
 	}
 
+	@keyframes led-move {
+		0% { clip-path: inset(0 0 99% 0); }
+		25% { clip-path: inset(0 0 0 99%); }
+		50% { clip-path: inset(99% 0 0 0); }
+		75% { clip-path: inset(0 99% 0 0); }
+		100% { clip-path: inset(0 0 99% 0); }
+	}
+
+	#group {
+		position: relative;
+		overflow: visible; /* Permite que el LED se vea fuera del borde */
+	}
+
+	#group:hover::before {
+		content: "";
+		position: absolute;
+		top: -3px;
+		left: -3px;
+		right: -3px;
+		bottom: -3px;
+		border-radius: inherit;
+		border: 3px solid transparent;
+		background: linear-gradient(90deg, #6effb7, #00d4ff, #6e40ff, #6effb7);
+		mask: linear-gradient(white 0 0) padding-box, linear-gradient(white 0 0);
+		mask-composite: exclude;
+		z-index: 10; /* Asegura que el LED esté encima */
+		animation: led-move 4s linear infinite;
+	}
+
 	/* Transition for sections */
 	/* section {
 		opacity: 1;

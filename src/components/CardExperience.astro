@@ -8,7 +8,7 @@ interface Props {
 const { title, subtitle, list } = Astro.props;
 ---
 
-<article class="p-6 mb-10 bg-white bg-opacity-10 backdrop-blur-md border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:bg-opacity-10 dark:border-gray-700 w-[100%] ">
+<article id="group" class="p-6 mb-10 bg-white bg-opacity-10 backdrop-blur-md border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:bg-opacity-10 dark:border-gray-700 w-[100%] ">
     <h3 class="mb-2 text-2xl font-bold text-[#6effb7]">{title}</h3>
     <h4 class="mb-3 font-normal">{subtitle}</h4>
     <ul class="list-disc ml-6 mb-3">
